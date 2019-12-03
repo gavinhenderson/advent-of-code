@@ -9,7 +9,8 @@
     "day1-extra": "node day1-extra",
     "day2": "node day2",
     "day2-extra": "node day2-extra",
-    "day3": "node day3"
+    "day3": "node day3",
+    "day3-extra": "node day3-extra"
   },
   "repository": {
     "type": "git",
