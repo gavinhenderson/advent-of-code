@@ -4,6 +4,7 @@ export const getAllPermutations = (entries: Array<number>, length: number): Arra
     return allSubsets.map(subset => subset.sort((a, b) => a - b))
 }
 
+// Ripped straight from https://gist.github.com/axelpale/3118596
 const k_combinations = <T>(set: T[], k: number) => {
     if (k > set.length || k <= 0) {
         return [];
