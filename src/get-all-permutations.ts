@@ -1,7 +1,7 @@
 export const getAllPermutations = (entries: Array<number>, length: number): Array<Array<number>> => {
     const allSubsets = k_combinations(entries, length)
 
-    return allSubsets.filter(subset => subset.length === length).map(subset => subset.sort((a, b) => a - b))
+    return allSubsets.map(subset => subset.sort((a, b) => a - b))
 }
 
 const k_combinations = <T>(set: T[], k: number) => {
@@ -29,10 +29,3 @@ const k_combinations = <T>(set: T[], k: number) => {
 
     return combs;
 };
-
-const getAllSubsets = theArray => theArray.reduce(
-        (subsets, value) => subsets.concat(
-         subsets.map(set => [value,...set])
-        ),
-        [[]]
-      );
