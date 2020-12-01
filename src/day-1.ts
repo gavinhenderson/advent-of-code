@@ -205,8 +205,11 @@ const entries = [1962,
 
 const target = 2020
 
-const result = entriesThatSumToGivenNumber(entries, target)
+const result = entriesThatSumToGivenNumber(entries, target, 2)
 
 const finalResult = result[0] * result[1]
 
-console.log({finalResult})
+console.log({ finalResult })
+
+const extraResult = entriesThatSumToGivenNumber(entries, target, 3)
+console.log({extraResult, 'extraFinal': extraResult[0] * extraResult[1] * extraResult[2]})
