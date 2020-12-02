@@ -9,6 +9,18 @@ export const isPasswordValid = (password: Password): boolean => {
         return false
     }
 
-
     return true
+}
+
+export const isPasswordValidSecondPolicy = (password: Password): boolean => {
+    const charAtFirstPos = password.password[password.minChars-1]
+    const charAtSecondPos = password.password[password.maxChars-1]
+
+    const { char } = password
+ 
+    const charOneMatches = charAtFirstPos == char
+    const charTwoMatches = charAtSecondPos == char
+
+    // XOR
+    return ( charOneMatches && !charTwoMatches ) || ( !charOneMatches && charTwoMatches )
 }
