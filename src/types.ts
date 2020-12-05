@@ -5,6 +5,12 @@ interface Password {
   password: string;
 }
 
+interface BoardingPass {
+  row: number;
+  column: number;
+  id: number;
+}
+
 interface Passport {
   ecl?: string;
   pid?: string;

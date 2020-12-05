@@ -10,6 +10,7 @@
     "day-2": "ts-node src/day-2.ts",
     "day-3": "ts-node src/day-3.ts",
     "day-4": "ts-node src/day-4.ts",
+    "day-5": "ts-node src/day-5.ts",
     "test": "jest"
   },
   "devDependencies": {
