@@ -11,6 +11,12 @@ interface BoardingPass {
   id: number;
 }
 
+interface Group {
+  people: Array<Array<string>>;
+  uniqueQuestions: Array<string>;
+  commonQuestions: Array<string>;
+}
+
 interface Passport {
   ecl?: string;
   pid?: string;
