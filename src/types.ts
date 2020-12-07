@@ -1,3 +1,14 @@
+interface Bag {
+  name: string;
+  rule: string;
+  rules?: Array<Rule>;
+}
+
+interface Rule {
+  bag: Bag;
+  quantity: number;
+}
+
 interface Password {
   minChars: number;
   maxChars: number;
