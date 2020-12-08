@@ -1,3 +1,13 @@
+interface ProgramLine {
+  offset: number;
+  command: string;
+}
+
+interface ProgramOutput {
+  accumulator: number;
+  haltLine: number;
+}
+
 interface Bag {
   name: string;
   rule: string;
