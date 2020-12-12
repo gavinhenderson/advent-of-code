@@ -1,3 +1,14 @@
+interface Position {
+  /**
+   * North is positive
+   */
+  northSouthPos: number;
+  /**
+   * East is positive
+   */
+  eastWestPos: number;
+}
+
 interface ProgramLine {
   offset: number;
   command: string;
