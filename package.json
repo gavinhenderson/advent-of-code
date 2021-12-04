@@ -1,0 +1,14 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gavinhenderson/advent-of-code",
+  "author": "Gavin Henderson <gavin.henderson@hotmail.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^27.4.3"
+  },
+  "scripts": {
+    "test": "jest --watch"
+  }
+}
